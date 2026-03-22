@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340">
+    <defs>
+        <linearGradient id="bgHugo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e4ffe8"/>
+            <stop offset="100%" stop-color="#f6fff8"/>
+        </linearGradient>
+        <linearGradient id="shirtHugo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#17b37a"/>
+            <stop offset="100%" stop-color="#0f8f61"/>
+        </linearGradient>
+        <filter id="shadowHugo" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#20304a" flood-opacity="0.16"/>
+        </filter>
+    </defs>
+
+    <rect width="340" height="340" rx="34" fill="url(#bgHugo)"/>
+    <path d="M40 90 C58 24 136 16 196 38 C256 26 310 66 300 132 C292 176 258 198 256 236 C254 280 216 308 164 302 C112 296 94 270 60 254 C18 234 4 192 16 150 C22 128 30 106 40 90 Z"
+            fill="#ffffff" fill-opacity="0.22"/>
+
+    <g filter="url(#shadowHugo)">
+        <path d="M108 292 C116 244 144 228 170 228 C196 228 224 244 232 292 Z"
+                fill="url(#shirtHugo)" stroke="#22324a" stroke-width="4"/>
+        <path d="M144 230 Q170 254 196 230" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="4"/>
+
+        <ellipse cx="170" cy="156" rx="58" ry="66" fill="#e8b991" stroke="#22324a" stroke-width="4"/>
+
+        <!-- Pelo rizado -->
+        <g fill="#5a3429" stroke="#22324a" stroke-width="4">
+            <circle cx="126" cy="120" r="18"/>
+            <circle cx="148" cy="104" r="22"/>
+            <circle cx="176" cy="98" r="24"/>
+            <circle cx="204" cy="108" r="20"/>
+            <circle cx="220" cy="128" r="16"/>
+            <path d="M118 154 C122 126 142 112 170 112 C198 112 218 126 222 154
+               C208 134 192 126 170 126 C148 126 132 134 118 154 Z"/>
+        </g>
+
+        <path d="M142 158 Q150 150 158 158" fill="none" stroke="#22324a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M182 158 Q190 150 198 158" fill="none" stroke="#22324a" stroke-width="4" stroke-linecap="round"/>
+
+        <path d="M166 170 Q170 177 174 170" fill="none" stroke="#bf7c69" stroke-width="3" stroke-linecap="round"/>
+        <path d="M154 190 Q170 198 186 190" fill="none" stroke="#ab5f6f" stroke-width="4" stroke-linecap="round"/>
+
+        <ellipse cx="132" cy="180" rx="10" ry="6" fill="#f09aac" fill-opacity="0.34"/>
+        <ellipse cx="208" cy="180" rx="10" ry="6" fill="#f09aac" fill-opacity="0.34"/>
+
+        <!-- Sudadera -->
+        <path d="M132 238 Q170 220 208 238" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+        <path d="M152 232 Q170 248 188 232" fill="none" stroke="#ffffff" stroke-opacity="0.26" stroke-width="3"/>
+
+        <!-- Cordones -->
+        <path d="M163 235 L160 252" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M177 235 L180 252" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+</svg>

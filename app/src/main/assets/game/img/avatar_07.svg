@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340">
+    
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#e3ffe5"/>
+        <stop offset="100%" stop-color="#f7fff8"/>
+      </linearGradient>
+      <linearGradient id="shirtGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#18b893"/>
+        <stop offset="100%" stop-color="#18b893" stop-opacity="0.78"/>
+      </linearGradient>
+      <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#22304d" flood-opacity="0.14"/>
+      </filter>
+    </defs>
+    <rect width="340" height="340" rx="34" fill="url(#bg)"/>
+    <path d="M42 82 C54 28, 124 14, 180 36 C250 18, 306 58, 300 118 C296 162, 258 184, 258 224 C258 274, 216 306, 164 302 C120 298, 104 276, 68 260 C18 236, 2 190, 16 146 C26 116, 34 110, 42 82 Z"
+          fill="#ffffff" fill-opacity="0.26"/>
+    <circle cx="266" cy="70" r="16" fill="#ffffff" fill-opacity="0.18"/>
+    <circle cx="78" cy="260" r="22" fill="#ffffff" fill-opacity="0.12"/>
+    
+    
+    <g filter="url(#shadow)">
+      <path d="M108 292 C114 244 142 228 170 228 C198 228 226 244 232 292 Z"
+            fill="url(#shirtGrad)" stroke="#25334a" stroke-width="4"/>
+      <path d="M142 228 Q170 252 198 228" fill="none" stroke="#ffffff" stroke-opacity="0.36" stroke-width="4"/>
+    </g>
+    
+    <path d="M170 95 C201 95 228 118 230 149 C232 194 206 218 170 221 C134 218 108 194 110 149 C112 118 139 95 170 95 Z" fill="#efc3a0" stroke="#25334a" stroke-width="4"/>
+    
+        <path d="M112 148 C118 100 144 82 174 82 C204 82 226 104 228 150
+                 C214 118 196 110 174 112 C150 114 130 126 112 148 Z"
+              fill="#242237" stroke="#25334a" stroke-width="4"/>
+        <path d="M174 84 C164 96 160 108 160 122" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="4"/>
+        
+    
+        <circle cx="150" cy="156" r="6" fill="#25334a"/>
+        <circle cx="190" cy="156" r="6" fill="#25334a"/>
+        <circle cx="148" cy="154" r="1.7" fill="#ffffff"/>
+        <circle cx="188" cy="154" r="1.7" fill="#ffffff"/>
+        
+    <path d="M166 168 Q170 176 174 168" fill="none" stroke="#c48473" stroke-width="3" stroke-linecap="round"/>
+    <path d="M154 188 Q170 198 186 188" fill="none" stroke="#b45f70" stroke-width="4" stroke-linecap="round"/>
+    
+    <ellipse cx="132" cy="178" rx="10" ry="6" fill="#f2a0af" fill-opacity="0.45"/>
+    <ellipse cx="208" cy="178" rx="10" ry="6" fill="#f2a0af" fill-opacity="0.45"/>
+    
+    
+        <g fill="none" stroke="#25334a" stroke-width="4">
+          <rect x="130" y="146" width="28" height="20" rx="7"/>
+          <rect x="182" y="146" width="28" height="20" rx="7"/>
+          <path d="M158 156 H182"/>
+        </g>
+        
+    </svg>

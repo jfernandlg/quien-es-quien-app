@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340" width="340" height="340">
+    <defs>
+        <linearGradient id="bgMateo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#dff4ff"/>
+            <stop offset="100%" stop-color="#eefbff"/>
+        </linearGradient>
+        <linearGradient id="shirtMateo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#2d7ff9"/>
+            <stop offset="100%" stop-color="#175fd1"/>
+        </linearGradient>
+        <filter id="shadowMateo" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#20304a" flood-opacity="0.16"/>
+        </filter>
+    </defs>
+
+    <rect width="340" height="340" rx="34" fill="url(#bgMateo)"/>
+    <path d="M36 86 C48 28 122 14 184 34 C246 20 304 58 300 120 C296 170 252 188 252 228 C252 278 212 306 162 302 C118 298 100 274 68 258 C20 236 2 188 16 146 C22 126 30 106 36 86 Z"
+            fill="#ffffff" fill-opacity="0.24"/>
+
+    <g filter="url(#shadowMateo)">
+        <path d="M108 292 C116 244 142 226 170 226 C198 226 224 244 232 292 Z"
+                fill="url(#shirtMateo)" stroke="#22324a" stroke-width="4"/>
+        <path d="M145 228 Q170 250 195 228" fill="none" stroke="#ffffff" stroke-opacity="0.34" stroke-width="4"/>
+
+        <ellipse cx="170" cy="154" rx="58" ry="66" fill="#efc5a7" stroke="#22324a" stroke-width="4"/>
+
+        <path d="M114 146 C118 102 144 82 174 82 C206 82 228 104 228 148
+             C214 120 194 110 170 112 C144 114 128 124 114 146 Z"
+                fill="#2a2f3d" stroke="#22324a" stroke-width="4"/>
+
+        <path d="M130 122 Q154 104 186 104 Q208 104 222 118"
+                fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="4"/>
+
+        <circle cx="150" cy="156" r="6" fill="#22324a"/>
+        <circle cx="190" cy="156" r="6" fill="#22324a"/>
+        <circle cx="148" cy="154" r="1.8" fill="#ffffff"/>
+        <circle cx="188" cy="154" r="1.8" fill="#ffffff"/>
+
+        <path d="M166 168 Q170 176 174 168" fill="none" stroke="#c88776" stroke-width="3" stroke-linecap="round"/>
+        <path d="M152 188 Q170 203 188 188" fill="none" stroke="#a85c6e" stroke-width="4" stroke-linecap="round"/>
+
+        <ellipse cx="132" cy="178" rx="10" ry="6" fill="#ef98aa" fill-opacity="0.36"/>
+        <ellipse cx="208" cy="178" rx="10" ry="6" fill="#ef98aa" fill-opacity="0.36"/>
+
+        <!-- Chaqueta deportiva -->
+        <path d="M118 244 Q170 224 222 244 L232 292 H108 Z"
+                fill="#1f66e5" fill-opacity="0.2"/>
+        <path d="M160 226 L170 292 L180 226" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="4"/>
+
+        <!-- Cejas -->
+        <path d="M140 144 Q150 140 160 144" fill="none" stroke="#22324a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M180 144 Q190 140 200 144" fill="none" stroke="#22324a" stroke-width="4" stroke-linecap="round"/>
+    </g>
+</svg>

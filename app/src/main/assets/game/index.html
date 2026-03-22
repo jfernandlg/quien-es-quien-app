@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quién es quién?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Juego de mesa interactivo</p>
+        <h1>¿Quién es quién?</h1>
+        <p class="hero-text">
+          Haz preguntas, descarta personajes y usa tus <strong>2 oportunidades</strong>
+          para adivinar a la persona secreta.
+        </p>
+      </div>
+      <button id="resetButton" class="btn btn-secondary">Reiniciar partida</button>
+    </header>
+
+    <section class="top-panels">
+      <article class="panel">
+        <h2>1. Haz una pregunta</h2>
+        <p class="panel-text">El sistema solo responderá con “Sí” o “No”.</p>
+
+        <div class="control-group">
+          <label for="questionCategory">Tipo de pregunta</label>
+          <select id="questionCategory"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="questionValue">Valor</label>
+          <select id="questionValue"></select>
+        </div>
+
+        <button id="askButton" class="btn btn-primary">Preguntar</button>
+
+        <div class="answer-box">
+          <span class="answer-label">Respuesta</span>
+          <div id="answerText" class="answer-text">—</div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>2. Haz tu suposición final</h2>
+        <p class="panel-text">Solo tienes 2 oportunidades en total.</p>
+
+        <div class="control-group">
+          <label for="guessSelect">Selecciona un personaje</label>
+          <select id="guessSelect"></select>
+        </div>
+
+        <button id="guessButton" class="btn btn-accent">Hacer una suposición final</button>
+
+        <div class="attempts-box">
+          <span>Oportunidades restantes</span>
+          <strong id="attemptsCounter">2</strong>
+        </div>
+      </article>
+
+      <article class="panel status-panel">
+        <h2>Estado de la partida</h2>
+        <div id="statusMessage" class="status-message neutral">
+          Se ha elegido una persona secreta al azar. ¡Empieza a jugar!
+        </div>
+
+        <div id="revealBox" class="reveal-box hidden">
+          <h3>Ficha de la persona correcta</h3>
+          <ul>
+            <li><strong>Nombre:</strong> <span id="revealName"></span></li>
+            <li><strong>Película favorita:</strong> <span id="revealMovie"></span></li>
+            <li><strong>Destino ideal:</strong> <span id="revealDestination"></span></li>
+            <li><strong>Artista favorito:</strong> <span id="revealArtist"></span></li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="board-section">
+      <div class="board-header">
+        <div>
+          <h2>Personajes</h2>
+          <p>Toca una carta para marcarla como descartada o volver a activarla.</p>
+        </div>
+        <div class="legend">
+          <span class="legend-item"><span class="legend-dot active-dot"></span> Activo</span>
+          <span class="legend-item"><span class="legend-dot discarded-dot"></span> Descartado</span>
+        </div>
+      </div>
+
+      <div id="characterGrid" class="character-grid"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

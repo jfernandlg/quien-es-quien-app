@@ -1,0 +1,362 @@
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --panel-border: #d9e1f0;
+  --text: #1f2a44;
+  --muted: #5f6b85;
+  --primary: #6c63ff;
+  --primary-dark: #5448e8;
+  --accent: #18b893;
+  --accent-dark: #119477;
+  --danger: #e85d75;
+  --warning: #d89b00;
+  --success: #16a34a;
+  --shadow: 0 10px 24px rgba(31, 42, 68, 0.12);
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(1320px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+  padding: 26px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #6c63ff, #18b893);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero h1,
+.board-header h2,
+.panel h2 {
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.hero-text,
+.panel-text,
+.board-header p,
+.legend,
+.control-group label,
+.attempts-box span,
+.answer-label,
+.reveal-box li,
+.status-message,
+button,
+select {
+  font-size: 0.98rem;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.panel-text,
+.board-header p,
+.legend,
+.reveal-box li {
+  color: var(--muted);
+}
+
+.top-panels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.panel,
+.board-section {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  padding: 22px;
+}
+
+.status-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--panel-border);
+  background: white;
+  color: var(--text);
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+  box-shadow: 0 10px 22px rgba(31, 42, 68, 0.16);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+.btn-secondary {
+  background: #edf1fb;
+  color: var(--text);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+}
+
+.answer-box,
+.attempts-box,
+.status-message,
+.reveal-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: #f8faff;
+  border: 1px solid var(--panel-border);
+}
+
+.answer-label {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.answer-text {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.attempts-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attempts-box strong {
+  font-size: 2rem;
+  color: var(--warning);
+}
+
+.status-message {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.status-message.neutral {
+  border-left: 5px solid #7aa2ff;
+}
+
+.status-message.success {
+  border-left: 5px solid var(--success);
+}
+
+.status-message.error {
+  border-left: 5px solid var(--danger);
+}
+
+.status-message.warning {
+  border-left: 5px solid var(--warning);
+}
+
+.reveal-box h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.reveal-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.board-section {
+  padding: 22px;
+}
+
+.board-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.active-dot {
+  background: #6c63ff;
+}
+
+.discarded-dot {
+  background: #c0c7d8;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.character-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--panel-border);
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease, border-color 0.18s ease;
+  box-shadow: 0 8px 18px rgba(31, 42, 68, 0.08);
+}
+
+.character-card:hover {
+  transform: translateY(-2px);
+}
+
+.character-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center center;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffffff, #e7ecff);
+}
+
+.card-content {
+  padding: 14px 14px 16px;
+  text-align: center;
+}
+
+.card-name {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.card-tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eef3fb;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.character-card.discarded {
+  opacity: 0.38;
+  filter: grayscale(1);
+}
+
+.character-card.revealed-secret {
+  border: 2px solid var(--accent);
+}
+
+@media (max-width: 1000px) {
+  .top-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .character-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .character-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
