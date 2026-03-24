@@ -210,7 +210,7 @@ const baseCharacters = [
   },
   {
     id: 20,
-    name: "Jose Antonio",
+    name: "Jose Antonio Rodrigo",
     avatar: "img/avatar_08.svg",
     favoriteMovie: "Los tipos malos",
     movieGenre: "Animación",
@@ -375,7 +375,7 @@ const baseCharacters = [
   }
 ];
 
-const PLAYERS_PER_MATCH = 40;
+const PLAYERS_PER_MATCH = 8;
 
 const questionConfig = {
   favoriteMovie: {
