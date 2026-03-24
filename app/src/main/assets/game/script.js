@@ -378,23 +378,106 @@ const baseCharacters = [
 const PLAYERS_PER_MATCH = 40;
 
 const questionConfig = {
-  movieGenre: {
+  favoriteMovie: {
     label: "Película favorita",
-    question: value => `¿Su película favorita es de ${value.toLowerCase()}?`,
-    options: ["Acción", "Comedia", "Animación", "Ciencia ficción", "Fantasía", "Romance"]
+    question: value => `¿Su película favorita es "${value}"?`,
+    options: [
+      "El señor de los anillos",
+      "Harry Potter",
+      "Los vengadores: Infinity war",
+      "El viaje de Chihiro",
+      "Vaiana",
+      "Como perder a un chico en 10 días",
+      "Spiderman",
+      "Interstellar",
+      "El pianista",
+      "Ninguna en especial",
+      "El Hobbit",
+      "Mulán",
+      "Smile 2",
+      "The big short",
+      "Forrest Gump",
+      "El show de Truman",
+      "Los tipos malos",
+      "Malditos Bastardos",
+      "V de vendetta",
+      "Antes de ti",
+      "Braveheart",
+      "Scream",
+      "Piratas del Caribe 1",
+      "Fight Club",
+      "Los Simpsons",
+      "Los Increíbles",
+      "Avatar"
+    ]
   },
-  destinationType: {
+  idealDestination: {
     label: "Destino ideal",
-    question: value => `¿Su destino ideal es ${value.toLowerCase()}?`,
-    options: ["Playa", "Montaña", "Ciudad", "Nieve", "Naturaleza"]
+    question: value => `¿Su destino ideal es "${value}"?`,
+    options: [
+      "Antártida",
+      "Islandia",
+      "Perú",
+      "Sudáfrica",
+      "China",
+      "Kenia",
+      "Tailandia",
+      "Vietnam",
+      "Costa Rica",
+      "Japón",
+      "Filipinas",
+      "Nueva Zelanda",
+      "Indonesia",
+      "Argentina",
+      "Cuba",
+      "Cualquier parte del mundo",
+      "Chile",
+      "Canadá o Japón",
+      "Turquía",
+      "USA (Parques Naturales)",
+      "Australia",
+      "Noruega"
+    ]
   },
-  musicGenre: {
+  favoriteArtist: {
     label: "Artista favorito",
-    question: value => `¿Su artista favorito es del género ${value.toLowerCase()}?`,
-    options: ["Pop", "Rock", "Indie", "Electrónica", "Urbano", "Clásica"]
+    question: value => `¿Su artista favorito es "${value}"?`,
+    options: [
+      "Metallica",
+      "Oasis",
+      "Tini",
+      "La M.O.D.A.",
+      "RaiNao",
+      "Hens",
+      "Walls",
+      "Mvrk",
+      "Quevedo",
+      "Mora",
+      "Mikel Izal / La Fúmiga",
+      "J Abecia",
+      "Shakira",
+      "Berri Txarrak",
+      "Danny Ocean",
+      "Mora / Bad Gyal",
+      "Linkin Park",
+      "Ninguno",
+      "Arde Bogotá",
+      "Hombres G",
+      "Serko",
+      "MGMT",
+      "Beret",
+      "Leiva",
+      "The Offspring",
+      "Los de marras",
+      "Amaia",
+      "Berto Romero",
+      "Estopa",
+      "Avicii",
+      "C Mari",
+      "Robe"
+    ]
   }
 };
-
 const state = {
   characters: [],
   secretCharacter: null,
