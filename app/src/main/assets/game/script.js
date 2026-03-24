@@ -590,9 +590,9 @@ function updateAttempts() {
 
 function revealSecret() {
   revealName.textContent = state.secretCharacter.name;
-  revealMovie.textContent = `${state.secretCharacter.favoriteMovie} (${state.secretCharacter.movieGenre})`;
-  revealDestination.textContent = `${state.secretCharacter.idealDestination} (${state.secretCharacter.destinationType})`;
-  revealArtist.textContent = `${state.secretCharacter.favoriteArtist} (${state.secretCharacter.musicGenre})`;
+  revealMovie.textContent = `${state.secretCharacter.favoriteMovie}`;
+  revealDestination.textContent = `${state.secretCharacter.idealDestination}`;
+  revealArtist.textContent = `${state.secretCharacter.favoriteArtist}`;
   revealBox.classList.remove("hidden");
 }
 
