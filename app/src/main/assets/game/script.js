@@ -122,7 +122,7 @@ const baseCharacters = [
   },
   {
     id: 12,
-    name: "Jose Pablo",
+    name: "Pablo Fernández",
     avatar: "img/avatar_12.svg",
     favoriteMovie: "El señor de los anillos",
     movieGenre: "Fantasía",
@@ -144,7 +144,7 @@ const baseCharacters = [
   },
   {
     id: 14,
-    name: "Jose Luis",
+    name: "Jose Luis Gonzalez",
     avatar: "img/avatar_02.svg",
     favoriteMovie: "El señor de los anillos",
     movieGenre: "Fantasía",
@@ -331,7 +331,7 @@ const baseCharacters = [
   },
   {
     id: 31,
-    name: "Juan Luis",
+    name: "Juan Luis German",
     avatar: "img/avatar_07.svg",
     favoriteMovie: "Fight Club",
     movieGenre: "Drama",
