@@ -372,6 +372,18 @@ const baseCharacters = [
     destinationType: "Naturaleza",
     favoriteArtist: "Robe",
     musicGenre: "Rock"
+  },
+  
+  {
+    id: 35,
+    name: "Álvaro Mártinez",
+    avatar: "img/avatar_09.svg",
+    favoriteMovie: "Knives Out",
+    movieGenre: "Ciencia ficción",
+    idealDestination: "Japón",
+    destinationType: "Naturaleza",
+    favoriteArtist: "RALY",
+    musicGenre: "Rock"
   }
 ];
 
@@ -408,7 +420,8 @@ const questionConfig = {
       "Fight Club",
       "Los Simpsons",
       "Los Increíbles",
-      "Avatar"
+      "Avatar",
+      "Knives Out"
     ]
   },
   idealDestination: {
@@ -432,7 +445,7 @@ const questionConfig = {
       "Cuba",
       "Cualquier parte del mundo",
       "Chile",
-      "Canadá o Japón",
+      "Canadá",
       "Turquía",
       "USA (Parques Naturales)",
       "Australia",
@@ -474,7 +487,8 @@ const questionConfig = {
       "Estopa",
       "Avicii",
       "C Mari",
-      "Robe"
+      "Robe",
+      "RALY"
     ]
   }
 };
